@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Animations/Anim_PC.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://Assets/Styles/Style_Game Boy Monitor.tres" type="StyleBox" id=2]
 [ext_resource path="res://Assets/Fonts/Pixalated_DynamicFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Assets/Themes/PixelArt_Theme.tres" type="Theme" id=4]
 
 [node name="01 - Menu" type="Node"]
 
@@ -23,17 +24,19 @@ frames = ExtResource( 1 )
 animation = "PC"
 
 [node name="Button - Play" type="Button" parent="."]
-anchor_left = 0.281
-anchor_top = 0.417
-anchor_right = 0.281
-anchor_bottom = 0.417
-margin_left = 12.064
-margin_top = 3.952
-margin_right = 52.064
-margin_bottom = 27.952
+anchor_left = 0.312
+anchor_top = 0.431
+anchor_right = 0.441
+anchor_bottom = 0.549
+margin_left = 0.127998
+margin_top = -0.064003
+margin_right = 33.104
+margin_bottom = 16.944
 rect_scale = Vector2( 0.5, 0.5 )
+theme = ExtResource( 4 )
 custom_fonts/font = ExtResource( 3 )
 text = "JUGAR"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }

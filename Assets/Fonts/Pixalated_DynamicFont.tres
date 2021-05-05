@@ -3,8 +3,8 @@
 [ext_resource path="res://Assets/Fonts/Pixalated_DynamicFontData.tres" type="DynamicFontData" id=1]
 
 [resource]
-size = 5
+size = 10
 outline_size = 1
-outline_color = Color( 0, 0, 0, 0.435294 )
+outline_color = Color( 0, 0, 0, 1 )
 extra_spacing_char = 1
 font_data = ExtResource( 1 )

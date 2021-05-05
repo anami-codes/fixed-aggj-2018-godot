@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Animations/Anim_PC.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Assets/Styles/Style_Game Boy Monitor.tres" type="StyleBox" id=2]
+[ext_resource path="res://Prefabs/Player.tscn" type="PackedScene" id=3]
+
+[node name="01 - Menu" type="Node"]
+
+[node name="Background - Color" type="Panel" parent="."]
+margin_right = 2048.0
+margin_bottom = 1080.0
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background - PC" type="Node2D" parent="."]
+position = Vector2( 128, 72 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Background - PC"]
+position = Vector2( 900, 470 )
+scale = Vector2( 10.5, 10.5 )
+frames = ExtResource( 1 )
+animation = "PC"
+frame = 4
+playing = true
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1024, 390 )
